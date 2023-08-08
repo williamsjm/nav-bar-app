@@ -1,5 +1,5 @@
 import React from "react";
-import { NavContainer, LogoText, NavList } from "./NavBar.styles";
+import { Container, NavContainer, LogoText, NavList } from "./NavBar.styles";
 import LanguageButton from "../LanguageButton/LanguageButton";
 
 const NavBar: React.FC = () => {
@@ -7,6 +7,9 @@ const NavBar: React.FC = () => {
     <NavContainer>
       <LogoText>N5</LogoText>
       <NavList>
+        <li>
+          <a href="/">Home</a>
+        </li>
         <li>
           <a href="/rick-and-morty">Rick and Morty</a>
         </li>

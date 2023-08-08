@@ -24,3 +24,10 @@ export const NavList = styled.ul`
     text-decoration: none;
   }
 `;
+
+export const Container = styled.div`
+  
+  margin-left: auto;
+  margin-right: auto
+  max-width: 1400px;
+`;
