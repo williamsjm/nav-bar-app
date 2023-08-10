@@ -8,7 +8,7 @@ const NavBar: React.FC = () => {
       <LogoText>N5</LogoText>
       <NavList>
         <li>
-          <a href="/">Home</a>
+          <a href="/home">Home</a>
         </li>
         <li>
           <a href="/rick-and-morty">Rick and Morty</a>
