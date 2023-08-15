@@ -22,12 +22,20 @@ export const NavList = styled.ul`
   li a {
     color: white;
     text-decoration: none;
+    transition: color 0.3s ease-in-out;
+
+    &:hover {
+      color: #d4d4d4;
+    }
+  }
+
+  .active-link {
+    color: #ff4500;
   }
 `;
 
 export const Container = styled.div`
-  
   margin-left: auto;
-  margin-right: auto
+  margin-right: auto;
   max-width: 1400px;
 `;
