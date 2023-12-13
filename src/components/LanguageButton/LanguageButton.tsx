@@ -12,7 +12,7 @@ const LanguageButton: React.FC = () => {
   };
 
   return (
-    <StyledButton onClick={toggleLanguage}>
+    <StyledButton onClick={toggleLanguage} data-testid="languageButton">
       {i18n.language === "en" ? "ES" : "EN"}
     </StyledButton>
   );

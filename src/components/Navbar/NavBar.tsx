@@ -12,11 +12,15 @@ const NavBar: React.FC = () => {
     singleSpa.getAppStatus("@williamsjm/rick-and-morty") === "MOUNTED";
 
   return (
-    <NavContainer>
+    <NavContainer data-testid="navBar">
       <LogoText>N5</LogoText>
       <NavList>
         <li>
-          <a href="/home" className={isHomePageActive ? "active-link" : ""}>
+          <a
+            href="/home"
+            className={isHomePageActive ? "active-link" : ""}
+            data-testid="navLink"
+          >
             Home
           </a>
         </li>
@@ -24,6 +28,7 @@ const NavBar: React.FC = () => {
           <a
             href="/rick-and-morty"
             className={isRickAndMortyActive ? "active-link" : ""}
+            data-testid="navLink"
           >
             Rick and Morty
           </a>
@@ -32,6 +37,7 @@ const NavBar: React.FC = () => {
           <a
             href="/harry-potter"
             className={isHarryPotterActive ? "active-link" : ""}
+            data-testid="navLink"
           >
             Harry Potter
           </a>
